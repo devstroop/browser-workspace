@@ -14,7 +14,7 @@ The product repository is a Git submodule at [`browser/`](browser/) and is pinne
 |---|---|
 | Workspace repository | Private GitHub repository: `devstroop/browser-workspace`; default branch `main` |
 | Product repository | Public GitHub repository: `devstroop/browser`; default branch `main` |
-| Workspace baseline | Baseline commit `4a6de69`; current `main` `18236b1`; local checker passed 55/55 checks |
+| Workspace baseline | Baseline commit `4a6de69`; latest verified local checker passed 55/55 checks |
 | Product seed | Commit `077c98f` contains governance documentation and hygiene CI only; no browser code |
 | Submodule | `browser/` pinned to `077c98f`; lifecycle remains independent |
 | Architecture | No engine or shell selected; [ADR-0001](decisions/ADR-0001-browser-engine-and-shell-strategy.md) is **Proposed** |
