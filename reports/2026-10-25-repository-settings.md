@@ -60,7 +60,7 @@ Local workspace validation on 2026-10-25:
 - `node tooling/checks/check-workspace.mjs --require-submodule`: **55 passed, 0 warnings, 0 errors**.
 - Submodule HEAD matches the gitlink at `077c98f5c96c7c4cb51acb2df1492e7e44eec146`.
 
-The workspace workflow now passes on GitHub. The initial failure was a billing/spending-limit condition, not a checker failure; the retry completed successfully.
+The workspace workflow now passes on GitHub. The initial failure was a billing/spending-limit condition, not a checker failure; the retry completed successfully. Subsequent docs-only commits also passed, including run `40177057138`.
 
 ## Proposed controls (not applied)
 

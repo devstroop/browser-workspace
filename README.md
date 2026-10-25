@@ -14,16 +14,15 @@ The product repository is a Git submodule at [`browser/`](browser/) and is pinne
 |---|---|
 | Workspace repository | Private GitHub repository: `devstroop/browser-workspace`; default branch `main` |
 | Product repository | Public GitHub repository: `devstroop/browser`; default branch `main` |
-| Workspace baseline | Commit `4a6de69` pushed to `main`; latest local checker passed 55/55 checks |
+| Workspace baseline | Baseline commit `4a6de69`; current `main` `18236b1`; local checker passed 55/55 checks |
 | Product seed | Commit `077c98f` contains governance documentation and hygiene CI only; no browser code |
 | Submodule | `browser/` pinned to `077c98f`; lifecycle remains independent |
 | Architecture | No engine or shell selected; [ADR-0001](decisions/ADR-0001-browser-engine-and-shell-strategy.md) is **Proposed** |
 | Reference audit | 16 projects pinned and audited at documentation/source-manifest level; no upstream build or runtime test |
-| Workspace CI | GitHub-hosted workflow passed (run `40176621704`, 55/55 checks); an earlier attempt (`40175789838`) failed before job start due to the private-repository Actions billing/spending limit |
+| Workspace CI | GitHub-hosted workflow passes 55/55 checks (verified run `40177057138`); an earlier attempt (`40175789838`) failed before job start due to the private-repository Actions billing/spending limit |
 | Product CI | Repository hygiene workflow succeeded (run `40175022540`) |
 | Issues | 8 filed: [workspace #1–#3](https://github.com/devstroop/browser-workspace/issues), [product #1–#5](https://github.com/devstroop/browser/issues); see [planning/ISSUE-MAP.md](planning/ISSUE-MAP.md) |
 | Branch protection | Not configured. Workspace branch protection/rulesets are rejected by the current private-repo plan; product rulesets are available but not configured. |
-| License | No license has been granted for either repository. Product reuse and external contributions are blocked pending a decision. |
 | License | No license has been granted for either repository. Product reuse and external contributions are blocked pending a decision. |
 
 The public product repository and the private workspace have different audiences. Public issues must be self-contained and must not disclose private research, credentials, or security details.
