@@ -10,17 +10,22 @@ Closes # / Related to #
 
 What is included? What is intentionally excluded?
 
-## Implementation and evidence
+## Evidence and limitations
 
-Key design choices, source references, experiment results, or screenshots.
+- Evidence status: Verified / Observed / Inferred / Hypothesis / Unknown
+- Sources, revisions, commands, and environment:
+- What was not tested:
+- Known limitations:
 
 ## Validation
 
-- [ ] Tests/experiments run; results included.
-- [ ] Documentation updated where needed.
+- [ ] Checks run locally; results included.
+- [ ] Documentation and relative links updated where needed.
 - [ ] Security, privacy, and licensing implications considered.
+- [ ] Third-party code/license review completed or explicitly not applicable.
+- [ ] Submodule pointer unchanged, or the update is explained.
 - [ ] Known limitations and follow-up issues recorded.
-- [ ] CI passes.
+- [ ] Configured CI checks pass.
 
 ## Reviewer focus
 

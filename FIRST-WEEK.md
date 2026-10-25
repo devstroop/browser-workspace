@@ -1,31 +1,65 @@
 # Workspace Setup Checklist
 
+- Status: Bootstrap baseline; several controls remain open
+- Last verified: 2026-10-25
+
 ## Repository bootstrap
-- [ ] Create the workspace repository.
-- [ ] Add the browser repository as a Git submodule.
-- [ ] Add the core docs and adapt placeholders.
-- [ ] Decide where workspace and product issues should be filed.
-- [ ] Configure branch protection and PR review rules in the browser repository.
-- [ ] Configure minimum CI checks in both repositories.
+
+- [x] Create the workspace repository — `devstroop/browser-workspace` (private).
+- [x] Create the browser product repository — `devstroop/browser` (public).
+- [x] Add the browser repository as a Git submodule — pinned to `077c98f`.
+- [x] Add the core docs and adapt placeholders — baseline docs committed.
+- [x] Decide where workspace and product issues should be filed.
+- [ ] Configure branch protection and PR review rules in the browser repository — not configured; product is public, so rulesets are available, but the settings were not changed in this pass.
+- [ ] Configure branch protection in the workspace repository — current private-repository plan returns "Upgrade to GitHub Pro" for branch protection/rulesets.
+- [x] Add minimal workspace CI — `.github/workflows/workspace-check.yml`.
+- [x] Add minimal product repository hygiene CI — `.github/workflows/repository-check.yml` in the product seed.
+- [ ] Verify both CI workflows pass on GitHub — run status must be checked after push; do not assume success.
+- [ ] Add a submodule credential strategy if the product repository becomes private — currently public, so anonymous fetch is possible.
 
 ## Product direction
+
 - [ ] Create a top-level product vision/roadmap issue in the browser repository.
 - [ ] Create an MVP definition issue with measurable acceptance criteria.
-- [ ] Create a reference audit epic in the workspace repository.
-- [ ] Create an engine/native-GUI feasibility epic.
-- [ ] Create a security and third-party license audit issue.
-- [ ] Record the current assumptions and unresolved questions.
+- [x] Create a reference audit baseline in the workspace.
+- [x] Draft an engine/native-GUI feasibility research issue and an ADR proposal.
+- [x] Record the security and third-party license baseline.
+- [x] Record current assumptions and unresolved questions.
+- [ ] Decide the product license and contribution policy.
+- [ ] Decide target platforms and minimum OS versions.
 
 ## Research baseline
-- [ ] Verify exact Lightpanda repository/revision and current capabilities.
-- [ ] Identify the exact Vercel Zig GUI project and license.
-- [ ] Compare Tauri/Wry, Chromium/CEF, Servo, Ladybird, and WebKit against MVP needs.
+
+- [x] Verify exact Lightpanda repository/revision and current capabilities.
+- [x] Identify the exact Vercel Zig GUI project and license — `vercel-labs/native`, Apache-2.0.
+- [x] Compare Tauri/Wry, Chromium/CEF, Servo, Ladybird, WebKit, and Electron against MVP needs at documentation/source level.
 - [ ] Select a small representative set of websites and tests.
 - [ ] Define how benchmark results will be reproduced.
+- [ ] Run the engine/shell spike and record measured results.
 
 ## Planning discipline
-- [ ] Agree issue labels and milestone conventions.
-- [ ] Use parent issues for broad outcomes and child issues for actionable work.
-- [ ] Record estimates as ranges when uncertainty is high.
-- [ ] Link findings to issues in the repository responsible for the work.
-- [ ] Review the plan periodically; do not invent dates before dependencies and capacity are understood.
+
+- [x] Agree issue labels and milestone conventions — labels documented; milestones not created.
+- [x] Use parent issues for broad outcomes and child issues for actionable work.
+- [x] Record estimates as ranges when uncertainty is high.
+- [x] Link findings to issues in the repository responsible for the work.
+- [ ] Review the plan periodically; no review cadence has been agreed.
+- [ ] Configure CODEOWNERS or an equivalent review ownership map.
+
+## Next five working days
+
+1. Confirm the product license intent: proprietary, open source, or mixed. Until decided, do not accept external code contributions.
+2. Accept or revise the MVP target platforms and site/test set. Start with macOS only unless there is a written reason to add platforms.
+3. Run the system-WebView vs CEF vs Electron spike on macOS; capture startup, memory, navigation, input, sandbox, packaging, and update evidence.
+4. Remediate or explicitly reject the Native SDK CEF host because it disables the sandbox.
+5. Add branch/ruleset protection to the public product repository and require the repository-check workflow.
+6. Add a workspace submodule check to CI and confirm the pinned commit resolves.
+7. Decide whether to keep the product repository public; if yes, publish only self-contained issues and avoid private workspace links as sole evidence.
+8. Record the engine/shell outcome in ADR-0001 (accept, revise, or reject) before opening implementation PRs.
+
+## Do not do yet
+
+- Do not import an upstream browser/engine codebase.
+- Do not announce supported platforms or performance claims.
+- Do not promise update, sandbox, or privacy guarantees that are not implemented and tested.
+- Do not treat this checklist as evidence that a control is enforced.

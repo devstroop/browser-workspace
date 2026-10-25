@@ -4,6 +4,12 @@
 - Audience: Founders, engineering, research, product, security
 - Last reviewed: 2026-10-25
 
+## Current baseline
+
+The initiative is at the end of Phase 0, not at an implementation milestone. The product repository exists but contains governance documentation only. No engine or shell has been selected. See [ADR-0001](decisions/ADR-0001-browser-engine-and-shell-strategy.md) (Proposed) and the [architecture feasibility report](reports/2026-10-25-architecture-feasibility.md).
+
+The next decision is not "which engine do we fork?" It is "what is the smallest credible browser we can ship, and which shell/engine combination lets us validate it without taking on an unsustainable maintenance or licensing burden?"
+
 ## Vision
 
 Build a sophisticated, mainstream-capable browser platform that can evolve continuously toward the breadth, compatibility, privacy, performance, and user experience associated with leading browsers such as Chrome, Brave, Firefox, Safari, and AI-oriented browsers.
@@ -43,6 +49,17 @@ Unless a decision or issue explicitly changes scope, do not make these prerequis
 - Universal support for all media, DRM, codecs, and platform-specific integrations.
 - A complete independently implemented web engine before any user-facing MVP can ship.
 - AI functionality that is required for ordinary browsing.
+
+## Open product decisions
+
+- Target platforms and minimum OS versions for the first release.
+- Whether the product is proprietary, open source, or mixed, and under which license.
+- Which engine/shell approach is tested first and what evidence would change the choice.
+- Required codecs, DRM, extensions, accessibility level, and distribution channels.
+- Whether AI/agent features are in the MVP or a later phase.
+- What telemetry, crash reporting, and remote processing are acceptable.
+
+These are tracked as issues in the repository responsible for the work. They are not settled by this document.
 
 ## Measures of progress
 

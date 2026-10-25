@@ -1,0 +1,880 @@
+[
+{
+  "slug": "lightpanda",
+  "repo": "lightpanda-io/browser",
+  "canonical_url": "https://github.com/lightpanda-io/browser",
+  "role": "Headless browser engine and automation runtime",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "f9cfcba603427a3d4d4bb29964222f271aacbcd6",
+    "committed_at": "2026-10-25T03:11:30Z",
+    "message": "Merge pull request #4184 from jayhemnani9910/fix/shadow-root-element-from-point"
+  },
+  "latest_stable_release": {
+    "tag": "1.0.2",
+    "published_at": "2026-10-23T09:01:02Z"
+  },
+  "latest_published_release": {
+    "tag": "1.0.2",
+    "published_at": "2026-10-23T09:01:02Z",
+    "prerelease": false
+  },
+  "license": {
+    "spdx": "AGPL-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "file": null
+  },
+  "language": "Zig",
+  "languages": {
+    "Zig": 10678159,
+    "HTML": 2909012,
+    "Linker Script": 347235,
+    "Rust": 143890,
+    "JavaScript": 52658,
+    "Python": 7543,
+    "Shell": 7262,
+    "Makefile": 5733,
+    "Dockerfile": 3221,
+    "Nix": 2007,
+    "Go": 1136
+  },
+  "stars": 36955,
+  "forks": 1788,
+  "open_issues": 107,
+  "archived": false,
+  "created_at": "2023-02-07T15:19:34Z",
+  "pushed_at": "2026-10-25T03:38:21Z",
+  "size_kb": 41293,
+  "description": "Lightpanda: the headless browser designed for AI and automation"
+}
+,
+{
+  "slug": "native-sdk",
+  "repo": "vercel-labs/native",
+  "canonical_url": "https://github.com/vercel-labs/native",
+  "role": "Native desktop GUI toolkit with optional WebView/CEF content hosts",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "ff108d0a86468deafbf93f4184355984f8e088c0",
+    "committed_at": "2026-10-19T01:44:47Z",
+    "message": "Report provenance and apply write-back for compiled TypeScript views"
+  },
+  "latest_stable_release": {
+    "tag": "v0.11.0",
+    "published_at": "2026-10-13T18:03:36Z"
+  },
+  "latest_published_release": {
+    "tag": "v0.11.0",
+    "published_at": "2026-10-13T18:03:36Z",
+    "prerelease": false
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "file": null
+  },
+  "language": "Zig",
+  "languages": {
+    "Zig": 25195257,
+    "TypeScript": 5023894,
+    "Objective-C": 1013070,
+    "C++": 507100,
+    "C": 493147,
+    "Objective-C++": 216553,
+    "JavaScript": 214408,
+    "Shell": 114206,
+    "Java": 70143,
+    "PowerShell": 62039,
+    "Dockerfile": 6204,
+    "Python": 4585
+  },
+  "stars": 7809,
+  "forks": 330,
+  "open_issues": 183,
+  "archived": false,
+  "created_at": "2026-05-08T19:53:41Z",
+  "pushed_at": "2026-10-21T00:51:35Z",
+  "size_kb": 47722,
+  "description": "Toolkit for building native desktop apps"
+}
+,
+{
+  "slug": "tauri",
+  "repo": "tauri-apps/tauri",
+  "canonical_url": "https://github.com/tauri-apps/tauri",
+  "role": "Desktop application framework built on system WebViews",
+  "audit_date": "2026-10-25",
+  "default_branch": "dev",
+  "revision": {
+    "sha": "1fc6d9c85c7d9c79f44afc408853e4b5d3ac1e42",
+    "committed_at": "2026-10-24T14:07:12Z",
+    "message": "chore(deps): update tokio (lockfile-only), closes #16390 (#16392)"
+  },
+  "latest_stable_release": {
+    "tag": "tauri-cli-v2.12.4",
+    "published_at": "2026-10-21T11:56:45Z"
+  },
+  "latest_published_release": {
+    "tag": "tauri-v2.12.5",
+    "published_at": "2026-10-21T11:54:49Z",
+    "prerelease": false
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "file": null
+  },
+  "language": "Rust",
+  "languages": {
+    "Rust": 3382806,
+    "TypeScript": 378890,
+    "NSIS": 123479,
+    "JavaScript": 91605,
+    "Kotlin": 74350,
+    "Shell": 64764,
+    "Swift": 25190,
+    "Dockerfile": 2143,
+    "HTML": 2143,
+    "PowerShell": 1951,
+    "AppleScript": 1828,
+    "Svelte": 1747,
+    "CSS": 1658,
+    "Standard ML": 1348,
+    "Ruby": 839,
+    "Objective-C": 414,
+    "Objective-C++": 100,
+    "C++": 82
+  },
+  "stars": 112171,
+  "forks": 4111,
+  "open_issues": 1483,
+  "archived": false,
+  "created_at": "2019-07-13T09:09:37Z",
+  "pushed_at": "2026-10-24T14:15:42Z",
+  "size_kb": 112958,
+  "description": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend."
+}
+,
+{
+  "slug": "wry",
+  "repo": "tauri-apps/wry",
+  "canonical_url": "https://github.com/tauri-apps/wry",
+  "role": "Cross-platform system WebView embedding library",
+  "audit_date": "2026-10-25",
+  "default_branch": "dev",
+  "revision": {
+    "sha": "713aee46beffba6c49577380cd7cdc52b474f336",
+    "committed_at": "2026-10-23T11:34:16Z",
+    "message": "fix(android): take the IPC request URL from the sending frame's origin (#1891)"
+  },
+  "latest_stable_release": {
+    "tag": "wry-v0.57.1",
+    "published_at": "2026-10-23T11:20:46Z"
+  },
+  "latest_published_release": {
+    "tag": "wry-v0.57.1",
+    "published_at": "2026-10-23T11:20:46Z",
+    "prerelease": false
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "file": null
+  },
+  "language": "Rust",
+  "languages": {
+    "Rust": 481819,
+    "Kotlin": 44685,
+    "JavaScript": 2159,
+    "HTML": 365,
+    "CSS": 166
+  },
+  "stars": 5027,
+  "forks": 577,
+  "open_issues": 219,
+  "archived": false,
+  "created_at": "2020-07-12T15:12:44Z",
+  "pushed_at": "2026-10-23T18:22:15Z",
+  "size_kb": 10346,
+  "description": "Cross-platform WebView library in Rust for Tauri."
+}
+,
+{
+  "slug": "chromium",
+  "repo": "chromium/chromium",
+  "canonical_url": "https://github.com/chromium/chromium",
+  "role": "Full browser platform and engine",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "3f5a9191384c982c4baea0a3c78cdb2874a34bb8",
+    "committed_at": "2026-10-25T07:45:50Z",
+    "message": "Roll Chrome Mac Arm PGO Profile"
+  },
+  "latest_stable_release": {
+    "tag": null,
+    "published_at": null
+  },
+  "latest_published_release": null,
+  "license": {
+    "spdx": "BSD-3-Clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "file": null
+  },
+  "language": null,
+  "languages": {},
+  "stars": 25135,
+  "forks": 9367,
+  "open_issues": 28,
+  "archived": false,
+  "created_at": "2018-02-05T20:55:32Z",
+  "pushed_at": "2026-10-25T07:35:01Z",
+  "size_kb": 67792514,
+  "description": "The official GitHub mirror of the Chromium source"
+}
+,
+{
+  "slug": "brave-browser",
+  "repo": "brave/brave-browser",
+  "canonical_url": "https://github.com/brave/brave-browser",
+  "role": "Product/issues shell for a Chromium-based browser",
+  "audit_date": "2026-10-25",
+  "default_branch": "master",
+  "revision": {
+    "sha": "f91a6cfb3041c8fa0c1dff417dbbfb36bd4f7363",
+    "committed_at": "2026-10-23T16:03:50Z",
+    "message": "1.100.31"
+  },
+  "latest_stable_release": {
+    "tag": "v1.98.60",
+    "published_at": "2026-10-21T09:09:05Z"
+  },
+  "latest_published_release": {
+    "tag": "v1.100.31",
+    "published_at": "2026-10-23T21:56:35Z",
+    "prerelease": true
+  },
+  "license": {
+    "spdx": "MPL-2.0",
+    "name": "Mozilla Public License 2.0",
+    "file": null
+  },
+  "language": null,
+  "languages": {},
+  "stars": 23973,
+  "forks": 3260,
+  "open_issues": 11140,
+  "archived": false,
+  "created_at": "2017-11-09T23:44:38Z",
+  "pushed_at": "2026-10-23T19:25:10Z",
+  "size_kb": 39785,
+  "description": "Brave browser for Android, iOS, Linux, macOS, Windows."
+}
+,
+{
+  "slug": "brave-core",
+  "repo": "brave/brave-core",
+  "canonical_url": "https://github.com/brave/brave-core",
+  "role": "Brave product source on top of Chromium",
+  "audit_date": "2026-10-25",
+  "default_branch": "master",
+  "revision": {
+    "sha": "1e6f00267d382150bac8f87266a163d36e609eb8",
+    "committed_at": "2026-10-23T16:29:19Z",
+    "message": "Mark brave scheme as browser handled (#40961)"
+  },
+  "latest_stable_release": {
+    "tag": null,
+    "published_at": null
+  },
+  "latest_published_release": null,
+  "license": {
+    "spdx": "MPL-2.0",
+    "name": "Mozilla Public License 2.0",
+    "file": null
+  },
+  "language": "C++",
+  "languages": {
+    "C++": 46205440,
+    "HTML": 35481845,
+    "TypeScript": 11240232,
+    "Swift": 8947374,
+    "Java": 6232693,
+    "Python": 4891428,
+    "Objective-C++": 1764994,
+    "C": 1547267,
+    "JavaScript": 1286743,
+    "Rust": 649198,
+    "Objective-C": 459724,
+    "CSS": 189051,
+    "SCSS": 126780,
+    "Go Template": 32675,
+    "Shell": 28896,
+    "Starlark": 20999,
+    "Jinja": 8990,
+    "Batchfile": 7728,
+    "Ruby": 7115,
+    "Roff": 4848,
+    "PowerShell": 1510,
+    "Makefile": 189,
+    "RenderScript": 1
+  },
+  "stars": 3713,
+  "forks": 1500,
+  "open_issues": 448,
+  "archived": false,
+  "created_at": "2017-11-10T03:33:30Z",
+  "pushed_at": "2026-10-24T21:13:05Z",
+  "size_kb": 4868864,
+  "description": "Core engine for the Brave browser for mobile and desktop. For issues https://github.com/brave/brave-browser/issues"
+}
+,
+{
+  "slug": "servo",
+  "repo": "servo/servo",
+  "canonical_url": "https://github.com/servo/servo",
+  "role": "Independent embeddable browser engine",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "3043596ce5d69a4d7d43c70bcb534479d892bbd7",
+    "committed_at": "2026-10-25T05:52:42Z",
+    "message": "script_webcrypto: Use `sha1` and `sha2` crate for SHA support (#49253)"
+  },
+  "latest_stable_release": {
+    "tag": "v0.7.0",
+    "published_at": "2026-10-05T18:32:02Z"
+  },
+  "latest_published_release": {
+    "tag": "v0.7.0",
+    "published_at": "2026-10-05T18:32:02Z",
+    "prerelease": false
+  },
+  "license": {
+    "spdx": "MPL-2.0",
+    "name": "Mozilla Public License 2.0",
+    "file": null
+  },
+  "language": "Rust",
+  "languages": {
+    "Rust": 21765276,
+    "HTML": 9036951,
+    "Python": 1379438,
+    "WebIDL": 701564,
+    "JavaScript": 122949,
+    "Kotlin": 60935,
+    "CSS": 45741,
+    "C": 18722,
+    "Shell": 12099,
+    "TypeScript": 10924,
+    "Handlebars": 9549,
+    "Nix": 8350,
+    "Mako": 4417,
+    "Dockerfile": 3099,
+    "PowerShell": 1028,
+    "Makefile": 1022,
+    "IDL": 356,
+    "Batchfile": 256,
+    "Common Lisp": 86,
+    "Ruby": 31,
+    "RenderScript": 29,
+    "PostScript": 11
+  },
+  "stars": 38224,
+  "forks": 3852,
+  "open_issues": 3196,
+  "archived": false,
+  "created_at": "2012-02-08T19:07:25Z",
+  "pushed_at": "2026-10-25T06:59:31Z",
+  "size_kb": 2049039,
+  "description": "Servo aims to empower developers with a lightweight, high-performance alternative for embedding web technologies in applications."
+}
+,
+{
+  "slug": "ladybird",
+  "repo": "LadybirdBrowser/ladybird",
+  "canonical_url": "https://github.com/LadybirdBrowser/ladybird",
+  "role": "Independent browser and engine",
+  "audit_date": "2026-10-25",
+  "default_branch": "master",
+  "revision": {
+    "sha": "b7b781e8de0460166e6eb0c00d7dc380f4ff0278",
+    "committed_at": "2026-10-25T07:28:52Z",
+    "message": "LibWebView+UI/Qt: Add a “Reload Without Cache” action"
+  },
+  "latest_stable_release": {
+    "tag": null,
+    "published_at": null
+  },
+  "latest_published_release": null,
+  "license": {
+    "spdx": "BSD-2-Clause",
+    "name": "BSD 2-Clause \"Simplified\" License",
+    "file": null
+  },
+  "language": "C++",
+  "languages": {
+    "C++": 37440145,
+    "Rust": 35213338,
+    "HTML": 30377386,
+    "JavaScript": 10134843,
+    "Python": 2697552,
+    "Assembly": 1201751,
+    "CMake": 516036,
+    "Objective-C++": 212552,
+    "CSS": 155287,
+    "C": 79475,
+    "Shell": 76281,
+    "WebAssembly": 29037,
+    "Kotlin": 19600,
+    "Dockerfile": 6611,
+    "Objective-C": 2440,
+    "Java": 2058,
+    "GLSL": 1376,
+    "GDB": 713
+  },
+  "stars": 66665,
+  "forks": 3173,
+  "open_issues": 565,
+  "archived": false,
+  "created_at": "2024-05-30T09:18:10Z",
+  "pushed_at": "2026-10-25T07:43:16Z",
+  "size_kb": 549430,
+  "description": "Truly independent web browser"
+}
+,
+{
+  "slug": "webkit",
+  "repo": "WebKit/WebKit",
+  "canonical_url": "https://github.com/WebKit/WebKit",
+  "role": "Browser engine used by Safari and system WebViews",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "291e79a4ca63bb9eea0073dd937e123b7c1c099b",
+    "committed_at": "2026-10-25T07:34:37Z",
+    "message": "[GTK] Gamepad: north and west face buttons are swapped"
+  },
+  "latest_stable_release": {
+    "tag": null,
+    "published_at": null
+  },
+  "latest_published_release": null,
+  "license": {
+    "spdx": "NOASSERTION",
+    "name": "No license detected by GitHub",
+    "file": null
+  },
+  "language": "JavaScript",
+  "languages": {
+    "JavaScript": 619805591,
+    "HTML": 346543228,
+    "C++": 203056815,
+    "WebAssembly": 80032297,
+    "Objective-C++": 38238017,
+    "Python": 24782004,
+    "C": 21345709,
+    "Objective-C": 6911472,
+    "Perl": 5858230,
+    "Swift": 3026680,
+    "CSS": 2366209,
+    "Assembly": 1956569,
+    "CMake": 1949541,
+    "Go Template": 1467376,
+    "Ruby": 1248220,
+    "GLSL": 1097507,
+    "PHP": 686837,
+    "Shell": 329370,
+    "Makefile": 268029,
+    "WGSL": 244542,
+    "TypeScript": 236903,
+    "C#": 139829,
+    "Vue": 108638,
+    "Batchfile": 77843,
+    "XSLT": 58420,
+    "Elm": 52760,
+    "ANTLR": 44915,
+    "Java": 40581,
+    "PLpgSQL": 24206,
+    "Handlebars": 16736,
+    "Yacc": 13818,
+    "Svelte": 10138,
+    "DTrace": 5922,
+    "Hack": 5837,
+    "Dockerfile": 5078,
+    "Roff": 3926,
+    "QML": 3781,
+    "Haxe": 3707,
+    "SCSS": 3539,
+    "Rich Text Format": 2150,
+    "Pug": 1839,
+    "Smarty": 1132,
+    "Emacs Lisp": 432,
+    "R": 290,
+    "Raku": 247,
+    "PostScript": 155
+  },
+  "stars": 10272,
+  "forks": 2284,
+  "open_issues": 3050,
+  "archived": false,
+  "created_at": "2020-12-11T17:11:43Z",
+  "pushed_at": "2026-10-25T07:35:16Z",
+  "size_kb": 13216286,
+  "description": "Home of the WebKit project, the browser engine used by Safari, Mail, App Store and many other applications on macOS, iOS and Linux."
+}
+,
+{
+  "slug": "firefox",
+  "repo": "mozilla-firefox/firefox",
+  "canonical_url": "https://github.com/mozilla-firefox/firefox",
+  "role": "Firefox product and Gecko engine source",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "efd2d1e6f77570ae6bc5294731a68101e45c81a3",
+    "committed_at": "2026-10-24T20:58:17Z",
+    "message": "Bug 2080021 - Refresh revert-llvmorg-16-init-11301-g163bb6d64e5f for clang trunk. r=firefox-build-system-reviewers,ahochheiden"
+  },
+  "latest_stable_release": {
+    "tag": null,
+    "published_at": null
+  },
+  "latest_published_release": null,
+  "license": {
+    "spdx": "NOASSERTION",
+    "name": "Other",
+    "file": null
+  },
+  "language": "JavaScript",
+  "languages": {
+    "JavaScript": 349882950,
+    "C++": 292920729,
+    "HTML": 259889066,
+    "C": 120555749,
+    "Kotlin": 43928091,
+    "Python": 33814782,
+    "Rust": 21098140,
+    "TypeScript": 11609156,
+    "Assembly": 8935055,
+    "CSS": 4225889,
+    "Java": 4185578,
+    "Objective-C++": 2550845,
+    "Makefile": 2296433,
+    "Shell": 2135826,
+    "WebIDL": 1961563,
+    "Fluent": 1495722,
+    "GLSL": 1314088,
+    "SCSS": 776453,
+    "NSIS": 633856,
+    "Objective-C": 534753,
+    "Perl": 516874,
+    "Roff": 479235,
+    "Pawn": 364400,
+    "CMake": 154503,
+    "M4": 153967,
+    "C#": 126138,
+    "Jinja": 94280,
+    "Dockerfile": 73682,
+    "NASL": 71756,
+    "Starlark": 68201,
+    "Swift": 67326,
+    "IL Assembly": 52395,
+    "Meson": 50427,
+    "PHP": 35367,
+    "Ragel": 34669,
+    "HLSL": 33578,
+    "WGSL": 30302,
+    "Batchfile": 29989,
+    "XSLT": 21284,
+    "PowerShell": 19739,
+    "Go": 14155,
+    "AIDL": 13261,
+    "Lex": 11658,
+    "IDL": 10077,
+    "Go Template": 9688,
+    "Pascal": 6780,
+    "Befunge": 6280,
+    "GDB": 5961,
+    "SWIG": 3312,
+    "Yacc": 2517,
+    "Awk": 2216,
+    "RenderScript": 2050,
+    "Euphoria": 1894,
+    "sed": 1562,
+    "DTrace": 1297,
+    "R": 1064,
+    "Mako": 1006,
+    "Ruby": 836,
+    "Gnuplot": 710,
+    "CoffeeScript": 623,
+    "WebAssembly": 450,
+    "Scilab": 99,
+    "Linker Script": 97,
+    "Stylus": 82
+  },
+  "stars": 13581,
+  "forks": 1678,
+  "open_issues": 8,
+  "archived": false,
+  "created_at": "2024-07-30T01:51:51Z",
+  "pushed_at": "2026-10-25T06:47:35Z",
+  "size_kb": 5590164,
+  "description": "The official repository of Mozilla's Firefox web browser."
+}
+,
+{
+  "slug": "wpt",
+  "repo": "web-platform-tests/wpt",
+  "canonical_url": "https://github.com/web-platform-tests/wpt",
+  "role": "Cross-browser conformance test suite",
+  "audit_date": "2026-10-25",
+  "default_branch": "master",
+  "revision": {
+    "sha": "68d964a5f292bc4b2c2eba2f21e2b916190b6ad2",
+    "committed_at": "2026-10-25T07:01:17Z",
+    "message": "Drop Safari FAIL expectations for webtransport-h3 infrastructure tests"
+  },
+  "latest_stable_release": {
+    "tag": "merge_pr_64156",
+    "published_at": "2026-10-25T06:46:51Z"
+  },
+  "latest_published_release": {
+    "tag": "merge_pr_64156",
+    "published_at": "2026-10-25T06:46:51Z",
+    "prerelease": false
+  },
+  "license": {
+    "spdx": "NOASSERTION",
+    "name": "Other",
+    "file": null
+  },
+  "language": "HTML",
+  "languages": {
+    "HTML": 164999951,
+    "JavaScript": 27637224,
+    "Python": 7277040,
+    "CSS": 118224,
+    "Shell": 73794,
+    "Perl": 46544,
+    "Makefile": 10891,
+    "XSLT": 5260,
+    "TypeScript": 5145,
+    "Batchfile": 5100,
+    "C": 3491,
+    "Dockerfile": 2779,
+    "WebAssembly": 450
+  },
+  "stars": 6286,
+  "forks": 4021,
+  "open_issues": 2963,
+  "archived": false,
+  "created_at": "2012-03-04T12:58:11Z",
+  "pushed_at": "2026-10-25T07:07:17Z",
+  "size_kb": 2834813,
+  "description": "Test suites for Web platform specs — including WHATWG, W3C, and others"
+}
+,
+{
+  "slug": "playwright",
+  "repo": "microsoft/playwright",
+  "canonical_url": "https://github.com/microsoft/playwright",
+  "role": "Browser automation and test framework",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "91a765d1681cb3eeb0d0fb89fefec3cf0d21bd9b",
+    "committed_at": "2026-10-24T17:04:31Z",
+    "message": "fix(electron): enable SwiftShader fallback for WebGL (#43615)"
+  },
+  "latest_stable_release": {
+    "tag": "v1.64.1",
+    "published_at": "2026-10-14T11:51:33Z"
+  },
+  "latest_published_release": {
+    "tag": "v1.64.1",
+    "published_at": "2026-10-14T11:51:33Z",
+    "prerelease": false
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "file": null
+  },
+  "language": "TypeScript",
+  "languages": {
+    "TypeScript": 12696437,
+    "HTML": 489048,
+    "CSS": 315002,
+    "C++": 98574,
+    "Objective-C": 66998,
+    "Shell": 47504,
+    "JavaScript": 46215,
+    "Java": 20119,
+    "C": 10845,
+    "PowerShell": 6117,
+    "Python": 5489,
+    "C#": 2645,
+    "CMake": 2571,
+    "Makefile": 377,
+    "Batchfile": 169
+  },
+  "stars": 98458,
+  "forks": 6683,
+  "open_issues": 211,
+  "archived": false,
+  "created_at": "2019-11-15T18:32:42Z",
+  "pushed_at": "2026-10-24T17:04:31Z",
+  "size_kb": 246179,
+  "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. "
+}
+,
+{
+  "slug": "puppeteer",
+  "repo": "puppeteer/puppeteer",
+  "canonical_url": "https://github.com/puppeteer/puppeteer",
+  "role": "Browser automation over CDP and WebDriver BiDi",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "08e7b1aebe60462b6f7834e9dfe0f6c70464247c",
+    "committed_at": "2026-10-24T20:34:56Z",
+    "message": "fix: type wildcard event emitter handlers correctly (#15643)"
+  },
+  "latest_stable_release": {
+    "tag": "browsers-v3.2.6",
+    "published_at": "2026-10-22T11:49:31Z"
+  },
+  "latest_published_release": {
+    "tag": "puppeteer-v25.16.0",
+    "published_at": "2026-10-22T11:49:27Z",
+    "prerelease": false
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "file": null
+  },
+  "language": "TypeScript",
+  "languages": {
+    "TypeScript": 3123770,
+    "JavaScript": 118807,
+    "HTML": 33562,
+    "CSS": 6052,
+    "Dockerfile": 2001,
+    "Shell": 520,
+    "Go Template": 249
+  },
+  "stars": 95744,
+  "forks": 9572,
+  "open_issues": 213,
+  "archived": false,
+  "created_at": "2017-05-09T22:16:13Z",
+  "pushed_at": "2026-10-25T03:06:17Z",
+  "size_kb": 1598650,
+  "description": "JavaScript API for Chrome and Firefox"
+}
+,
+{
+  "slug": "cef",
+  "repo": "chromiumembedded/cef",
+  "canonical_url": "https://github.com/chromiumembedded/cef",
+  "role": "Chromium embedding framework",
+  "audit_date": "2026-10-25",
+  "default_branch": "master",
+  "revision": {
+    "sha": "e537569ecda2e3f23ffdac559ecf7f80b8e59467",
+    "committed_at": "2026-10-23T18:53:29Z",
+    "message": "Fix Origin header synthesis for extension requests (fixes #4309)"
+  },
+  "latest_stable_release": {
+    "tag": null,
+    "published_at": null
+  },
+  "latest_published_release": null,
+  "license": {
+    "spdx": "NOASSERTION",
+    "name": "Other",
+    "file": null
+  },
+  "language": "C++",
+  "languages": {
+    "C++": 10817947,
+    "Python": 1871136,
+    "C": 380886,
+    "Objective-C++": 318221,
+    "HTML": 236819,
+    "Starlark": 60582,
+    "CMake": 45026,
+    "Objective-C": 24978,
+    "Shell": 10156,
+    "Batchfile": 2817,
+    "NASL": 2140,
+    "Smarty": 2121,
+    "Pawn": 1941
+  },
+  "stars": 4845,
+  "forks": 675,
+  "open_issues": 193,
+  "archived": false,
+  "created_at": "2017-04-02T18:19:23Z",
+  "pushed_at": "2026-10-23T20:34:38Z",
+  "size_kb": 46798,
+  "description": "Chromium Embedded Framework (CEF). A simple framework for embedding Chromium-based browsers in other applications."
+}
+,
+{
+  "slug": "electron",
+  "repo": "electron/electron",
+  "canonical_url": "https://github.com/electron/electron",
+  "role": "Chromium and Node.js desktop application runtime",
+  "audit_date": "2026-10-25",
+  "default_branch": "main",
+  "revision": {
+    "sha": "96a2dc1f28a4e4a32fdc19d54ba0af36c7f2c536",
+    "committed_at": "2026-10-24T07:16:37Z",
+    "message": "ci: print TCC diagnostics when macOS runner lacks capture/input access (#55237)"
+  },
+  "latest_stable_release": {
+    "tag": "v45.0.0",
+    "published_at": "2026-10-21T05:22:39Z"
+  },
+  "latest_published_release": {
+    "tag": "v46.0.0-alpha.1",
+    "published_at": "2026-10-23T15:09:36Z",
+    "prerelease": true
+  },
+  "license": {
+    "spdx": "MIT",
+    "name": "MIT License",
+    "file": null
+  },
+  "language": "C++",
+  "languages": {
+    "C++": 5448590,
+    "TypeScript": 3695478,
+    "Objective-C++": 607101,
+    "JavaScript": 264716,
+    "Python": 158866,
+    "Objective-C": 63759,
+    "Shell": 44949,
+    "HTML": 12057,
+    "C#": 4535,
+    "C": 4512,
+    "Go Template": 3380,
+    "CSS": 2458,
+    "PowerShell": 624
+  },
+  "stars": 123534,
+  "forks": 17685,
+  "open_issues": 758,
+  "archived": false,
+  "created_at": "2013-04-12T01:47:36Z",
+  "pushed_at": "2026-10-25T03:36:29Z",
+  "size_kb": 227608,
+  "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS"
+}
+
+]

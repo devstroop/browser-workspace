@@ -1,0 +1,17 @@
+# slug	github-repo	role	canonical-url
+lightpanda	lightpanda-io/browser	Headless browser engine and automation runtime	https://github.com/lightpanda-io/browser
+native-sdk	vercel-labs/native	Native desktop GUI toolkit with optional WebView/CEF content hosts	https://github.com/vercel-labs/native
+tauri	tauri-apps/tauri	Desktop application framework built on system WebViews	https://github.com/tauri-apps/tauri
+wry	tauri-apps/wry	Cross-platform system WebView embedding library	https://github.com/tauri-apps/wry
+chromium	chromium/chromium	Full browser platform and engine	https://github.com/chromium/chromium
+brave-browser	brave/brave-browser	Product/issues shell for a Chromium-based browser	https://github.com/brave/brave-browser
+brave-core	brave/brave-core	Brave product source on top of Chromium	https://github.com/brave/brave-core
+servo	servo/servo	Independent embeddable browser engine	https://github.com/servo/servo
+ladybird	LadybirdBrowser/ladybird	Independent browser and engine	https://github.com/LadybirdBrowser/ladybird
+webkit	WebKit/WebKit	Browser engine used by Safari and system WebViews	https://github.com/WebKit/WebKit
+firefox	mozilla-firefox/firefox	Firefox product and Gecko engine source	https://github.com/mozilla-firefox/firefox
+wpt	web-platform-tests/wpt	Cross-browser conformance test suite	https://github.com/web-platform-tests/wpt
+playwright	microsoft/playwright	Browser automation and test framework	https://github.com/microsoft/playwright
+puppeteer	puppeteer/puppeteer	Browser automation over CDP and WebDriver BiDi	https://github.com/puppeteer/puppeteer
+cef	chromiumembedded/cef	Chromium embedding framework	https://github.com/chromiumembedded/cef
+electron	electron/electron	Chromium and Node.js desktop application runtime	https://github.com/electron/electron
