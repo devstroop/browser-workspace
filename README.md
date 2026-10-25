@@ -14,13 +14,16 @@ The product repository is a Git submodule at [`browser/`](browser/) and is pinne
 |---|---|
 | Workspace repository | Private GitHub repository: `devstroop/browser-workspace`; default branch `main` |
 | Product repository | Public GitHub repository: `devstroop/browser`; default branch `main` |
+| Workspace baseline | Commit `4a6de69` pushed to `main`; latest local checker passed 55/55 checks |
 | Product seed | Commit `077c98f` contains governance documentation and hygiene CI only; no browser code |
 | Submodule | `browser/` pinned to `077c98f`; lifecycle remains independent |
 | Architecture | No engine or shell selected; [ADR-0001](decisions/ADR-0001-browser-engine-and-shell-strategy.md) is **Proposed** |
 | Reference audit | 16 projects pinned and audited at documentation/source-manifest level; no upstream build or runtime test |
-| Workspace CI | Check workflow committed; see [tooling/checks](tooling/checks/README.md) |
-| Issues | 8 baseline issues drafted; filing status in [planning/ISSUE-MAP.md](planning/ISSUE-MAP.md) |
-| Branch protection | Not configured. The workspace repository is private and the current GitHub plan rejects branch protection/rulesets for it. |
+| Workspace CI | Workflow committed; GitHub-hosted run blocked by the private-repository Actions billing/spending limit (run `40175789838`). Local checker passes. |
+| Product CI | Repository hygiene workflow succeeded (run `40175022540`) |
+| Issues | 8 filed: [workspace #1–#3](https://github.com/devstroop/browser-workspace/issues), [product #1–#5](https://github.com/devstroop/browser/issues); see [planning/ISSUE-MAP.md](planning/ISSUE-MAP.md) |
+| Branch protection | Not configured. Workspace branch protection/rulesets are rejected by the current private-repo plan; product rulesets are available but not configured. |
+| License | No license has been granted for either repository. Product reuse and external contributions are blocked pending a decision. |
 | License | No license has been granted for either repository. Product reuse and external contributions are blocked pending a decision. |
 
 The public product repository and the private workspace have different audiences. Public issues must be self-contained and must not disclose private research, credentials, or security details.
@@ -33,8 +36,9 @@ The public product repository and the private workspace have different audiences
 4. [REFERENCE-REGISTER.md](REFERENCE-REGISTER.md) — audited upstream projects, revisions, licenses, dispositions.
 5. [RESEARCH-METHOD.md](RESEARCH-METHOD.md) — evidence labels, reproducibility, untrusted-code handling.
 6. [SECURITY-AND-LICENSES.md](SECURITY-AND-LICENSES.md) — verified license/security findings and open obligations.
-7. [FIRST-WEEK.md](FIRST-WEEK.md) — bootstrap checklist and next actions.
-8. [CONTRIBUTING.md](CONTRIBUTING.md) — workspace contribution rules.
+7. [SECURITY.md](SECURITY.md) — vulnerability reporting for the workspace and product.
+8. [FIRST-WEEK.md](FIRST-WEEK.md) — bootstrap checklist and next actions.
+9. [CONTRIBUTING.md](CONTRIBUTING.md) — workspace contribution rules.
 
 ## Repository layout
 
@@ -50,7 +54,7 @@ browser-workspace/
 │   └── issues/                   # Issue-ready drafts and filed-issue bodies
 ├── research/
 │   └── references/               # Audits and pinned metadata snapshots
-├── reports/                      # Baseline, feasibility, risk, and issue-plan reports
+├── reports/                      # Baseline, settings, feasibility, risk, issue-plan
 ├── tooling/
 │   ├── checks/                   # Workspace validation
 │   └── reference-audit/          # Reproducible GitHub metadata collection
@@ -63,6 +67,7 @@ browser-workspace/
 ├── REFERENCE-REGISTER.md
 ├── RESEARCH-METHOD.md
 ├── SECURITY-AND-LICENSES.md
+├── SECURITY.md
 ├── SUBMODULE.md
 ├── FIRST-WEEK.md
 └── CONTRIBUTING.md
@@ -107,6 +112,7 @@ No package installation is required for the workspace checker; it uses Node.js b
 
 - [Initial reference audit](research/references/2026-10-25-initial-audit.md)
 - [Workspace baseline report](reports/2026-10-25-workspace-baseline.md)
+- [Repository settings and CI verification](reports/2026-10-25-repository-settings.md)
 - [Architecture feasibility report](reports/2026-10-25-architecture-feasibility.md)
 - [Risk register](reports/2026-10-25-risks-and-open-questions.md)
 - [Issue plan](reports/2026-10-25-issue-plan.md)

@@ -21,7 +21,7 @@ Current status (2026-10-25):
 | Outcome | Status | Evidence / issue |
 |---|---|---|
 | Repositories and submodule | Done | Workspace, public product repo, submodule pin `077c98f` |
-| Workspace CI | Implemented, result pending | `.github/workflows/workspace-check.yml` |
+| Workspace CI | Local checker passes; GitHub run blocked by private-repo billing | `.github/workflows/workspace-check.yml`, run `40175789838` |
 | Reference audit | Done at documentation/source-manifest level | [Reference register](REFERENCE-REGISTER.md), [audit](research/references/2026-10-25-initial-audit.md) |
 | MVP requirements | Not defined | MVP issue |
 | Engine/shell comparison | Research complete; empirical spike pending | [ADR-0001](decisions/ADR-0001-browser-engine-and-shell-strategy.md) |

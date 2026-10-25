@@ -53,9 +53,22 @@ Out of scope:
 
 ## Evidence
 
-- Product vision and roadmap in the private workspace.
-- Public upstream platform constraints: WKWebView, WebView2, WebKitGTK, CEF, Electron.
-- Initial reference audit (2026-10-25).
+This issue is self-contained. Internal vision/roadmap material is maintained in a private workspace; the requirements above are the public basis for the work.
+
+Public platform references:
+
+- WKWebView: https://developer.apple.com/documentation/webkit/wkwebview
+- WebView2: https://learn.microsoft.com/microsoft-edge/webview2/
+- WebKitGTK: https://webkitgtk.org/
+- CEF: https://chromiumembedded.github.io/cef/
+- Electron: https://www.electronjs.org/docs/latest/
+
+## Related issues
+
+- Engine/shell spike: #2
+- Security/license baseline: #3
+- Product governance: #4
+- Visible prototype: #5
 
 ## Definition of done
 

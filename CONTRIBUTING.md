@@ -101,7 +101,7 @@ Follow [SUBMODULE.md](SUBMODULE.md). Pin a reviewed commit, explain the update, 
 
 Do not report product vulnerabilities in public issues. Follow the product repository's [security policy](https://github.com/devstroop/browser/blob/main/SECURITY.md).
 
-Workspace tooling vulnerabilities should be reported privately to the maintainers. No workspace-specific private reporting channel is verified as configured.
+For workspace tooling, follow [SECURITY.md](SECURITY.md). No workspace-specific private reporting channel is verified as configured.
 
 ## AI-assisted contributions
 

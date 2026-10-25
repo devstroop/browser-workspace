@@ -58,10 +58,15 @@ Out of scope:
 
 ## Evidence
 
-- `ROADMAP.md` Phase 1.
-- `reports/2026-10-25-architecture-feasibility.md`.
-- `decisions/ADR-0001-browser-engine-and-shell-strategy.md` (Proposed).
-- MVP definition issue and spike issue.
+This issue is self-contained. Internal roadmap and architecture material is maintained in a private workspace; it does not replace the public acceptance criteria above.
+
+- MVP definition issue: #1
+- Engine/shell spike issue: #2
+- Security/license baseline issue: #3
+- Product governance issue: #4
+- WPT: https://github.com/web-platform-tests/wpt
+- Playwright: https://playwright.dev/
+- Puppeteer: https://pptr.dev/
 
 ## Definition of done
 

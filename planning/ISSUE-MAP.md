@@ -2,25 +2,25 @@
 
 - Last updated: 2026-10-25
 - Source of truth for titles/labels: [`manifest.tsv`](manifest.tsv)
-- Filing state: **Drafts prepared; not yet filed** (update after GitHub issue creation)
+- Filing state: **8 issues filed on 2026-10-25**
 
 ## Workspace repository — `devstroop/browser-workspace`
 
 | Key | Title | Labels | State | Issue |
 |---|---|---|---|---|
-| WS-01 | Establish workspace evidence baseline and traceability | `type: epic`, `area: workspace`, `priority: p1` | Draft | — |
-| WS-02 | Enforce workspace CI and repository governance | `type: task`, `area: ci`, `area: workspace`, `priority: p0` | Draft | — |
-| WS-03 | Establish a reference-audit refresh and advisory-watch cadence | `type: research`, `area: research`, `priority: p2` | Draft | — |
+| WS-01 | Establish workspace evidence baseline and traceability | `type: epic`, `area: workspace`, `priority: p1` | Open | [#1](https://github.com/devstroop/browser-workspace/issues/1) |
+| WS-02 | Enforce workspace CI and repository governance | `type: task`, `area: ci`, `area: workspace`, `priority: p0` | Open | [#2](https://github.com/devstroop/browser-workspace/issues/2) |
+| WS-03 | Establish a reference-audit refresh and advisory-watch cadence | `type: research`, `area: research`, `priority: p2` | Open | [#3](https://github.com/devstroop/browser-workspace/issues/3) |
 
 ## Product repository — `devstroop/browser`
 
 | Key | Title | Labels | State | Issue |
 |---|---|---|---|---|
-| BR-01 | Define MVP scope, target platforms, and acceptance criteria | `type: epic`, `area: product`, `priority: p0` | Draft | — |
-| BR-02 | Time-boxed engine/shell spike: system WebView vs CEF vs Electron | `type: research`, `area: product`, `area: research`, `priority: p0` | Draft | — |
-| BR-03 | Security and license baseline for engine/shell options | `type: research`, `area: security`, `priority: p0` | Draft | — |
-| BR-04 | Bootstrap product repository governance and release readiness | `type: epic`, `area: product`, `priority: p0` | Draft | — |
-| BR-05 | Build visible browser prototype and MVP test harness | `type: epic`, `area: product`, `priority: p1` | Draft; blocked | — |
+| BR-01 | Define MVP scope, target platforms, and acceptance criteria | `type: epic`, `area: product`, `priority: p0` | Open | [#1](https://github.com/devstroop/browser/issues/1) |
+| BR-02 | Time-boxed engine/shell spike: system WebView vs CEF vs Electron | `type: research`, `area: product`, `area: research`, `priority: p0` | Open | [#2](https://github.com/devstroop/browser/issues/2) |
+| BR-03 | Security and license baseline for engine/shell options | `type: research`, `area: security`, `priority: p0` | Open | [#3](https://github.com/devstroop/browser/issues/3) |
+| BR-04 | Bootstrap product repository governance and release readiness | `type: epic`, `area: product`, `priority: p0` | Open | [#4](https://github.com/devstroop/browser/issues/4) |
+| BR-05 | Build visible browser prototype and MVP test harness | `type: epic`, `area: product`, `priority: p1`, `status: blocked` | Blocked | [#5](https://github.com/devstroop/browser/issues/5) |
 
 ## Sequence
 
@@ -42,10 +42,21 @@ BR-04 (product governance) ──┘
 - BR-04 gates external contributions and releases.
 - WS-02 and BR-04 are separate because workspace controls and product controls differ.
 
+## Current blockers
+
+| Blocker | Affected issues | State |
+|---|---|---|
+| No product license decision | BR-04; external contributions and distribution | Open |
+| No engine/shell decision | BR-02, BR-05 | Open; spike not run |
+| No MVP site/test list | BR-01, BR-02, BR-05 | Open |
+| Workspace private-repo Actions billing/spending limit | WS-02, WS-01 CI verification | Verified platform failure; local checker passes |
+| Product branch protection not configured | BR-04 | Open |
+| No legal/security review | BR-03, BR-04 | Open |
+| NATIVE SDK CEF sandbox disabled | BR-02, BR-03 | Verified source finding; remediation unknown |
+
 ## Filing notes
 
-- Create labels before filing; use the names in [`LABELS.md`](LABELS.md).
-- Public product issues must be self-contained. Cite public upstream sources; do not use private workspace links as the only evidence.
-- After filing, replace `—` with the issue URL and `Draft` with `Open`/`Blocked`/`Closed`.
-- Update `manifest.tsv` with the issue number.
+- Public product issues are self-contained. They cite public upstream sources and do not use private workspace links as the only evidence.
+- The issue bodies remain in [`issues/`](issues/) as the reviewable source.
+- Update this map and [`manifest.tsv`](manifest.tsv) when an issue is closed, superseded, or split.
 - Do not close WS-01 merely because the issue was filed; close it when its acceptance criteria are met.

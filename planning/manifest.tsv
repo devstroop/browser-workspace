@@ -1,9 +1,9 @@
 key	repository	title	labels	file	issue
-WS-01	devstroop/browser-workspace	[EPIC] Establish workspace evidence baseline and traceability	type: epic,area: workspace,priority: p1	planning/issues/WS-01-workspace-baseline.md	TBD
-WS-02	devstroop/browser-workspace	[TASK] Enforce workspace CI and repository governance	type: task,area: ci,area: workspace,priority: p0	planning/issues/WS-02-workspace-ci-governance.md	TBD
-WS-03	devstroop/browser-workspace	[RESEARCH] Establish a reference-audit refresh and advisory-watch cadence	type: research,area: research,priority: p2	planning/issues/WS-03-reference-audit-cadence.md	TBD
-BR-01	devstroop/browser	[EPIC] Define MVP scope, target platforms, and acceptance criteria	type: epic,area: product,priority: p0	planning/issues/BR-01-mvp-definition.md	TBD
-BR-02	devstroop/browser	[RESEARCH] Time-boxed engine/shell spike: system WebView vs CEF vs Electron	type: research,area: product,area: research,priority: p0	planning/issues/BR-02-engine-shell-spike.md	TBD
-BR-03	devstroop/browser	[RESEARCH] Security and license baseline for engine/shell options	type: research,area: security,priority: p0	planning/issues/BR-03-security-license-baseline.md	TBD
-BR-04	devstroop/browser	[EPIC] Bootstrap product repository governance and release readiness	type: epic,area: product,priority: p0	planning/issues/BR-04-product-governance.md	TBD
-BR-05	devstroop/browser	[EPIC] Build visible browser prototype and MVP test harness	type: epic,area: product,priority: p1	planning/issues/BR-05-visible-prototype.md	TBD
+WS-01	devstroop/browser-workspace	[EPIC] Establish workspace evidence baseline and traceability	type: epic,area: workspace,priority: p1	planning/issues/WS-01-workspace-baseline.md	1
+WS-02	devstroop/browser-workspace	[TASK] Enforce workspace CI and repository governance	type: task,area: ci,area: workspace,priority: p0	planning/issues/WS-02-workspace-ci-governance.md	2
+WS-03	devstroop/browser-workspace	[RESEARCH] Establish a reference-audit refresh and advisory-watch cadence	type: research,area: research,priority: p2	planning/issues/WS-03-reference-audit-cadence.md	3
+BR-01	devstroop/browser	[EPIC] Define MVP scope, target platforms, and acceptance criteria	type: epic,area: product,priority: p0	planning/issues/BR-01-mvp-definition.md	1
+BR-02	devstroop/browser	[RESEARCH] Time-boxed engine/shell spike: system WebView vs CEF vs Electron	type: research,area: product,area: research,priority: p0	planning/issues/BR-02-engine-shell-spike.md	2
+BR-03	devstroop/browser	[RESEARCH] Security and license baseline for engine/shell options	type: research,area: security,priority: p0	planning/issues/BR-03-security-license-baseline.md	3
+BR-04	devstroop/browser	[EPIC] Bootstrap product repository governance and release readiness	type: epic,area: product,priority: p0	planning/issues/BR-04-product-governance.md	4
+BR-05	devstroop/browser	[EPIC] Build visible browser prototype and MVP test harness	type: epic,area: product,priority: p1,status: blocked	planning/issues/BR-05-visible-prototype.md	5

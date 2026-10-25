@@ -30,7 +30,7 @@ Out of scope:
 
 ## Acceptance criteria
 
-- [ ] The `workspace-check` workflow has a successful run on `main`, linked from this issue.
+- [ ] The `workspace-check` workflow has a successful run on `main`, linked from this issue. The first run (`40175789838`) failed before job start because of the private-repository Actions billing/spending limit; local checks pass.
 - [ ] The workflow validates required files, relative links, JSON, placeholder/secret patterns, and the submodule declaration/pin.
 - [ ] A required status check is configured for `main`, or the platform blocker and accepted alternative are documented.
 - [ ] Actions are pinned to full commit SHAs; the policy is recorded.
@@ -48,6 +48,7 @@ Out of scope:
 ## Dependencies and blockers
 
 - GitHub plan or visibility decision for private-repo branch protection.
+- Private-repository Actions billing/spending limit; the workflow cannot start until resolved.
 - Organization admin access.
 - Product governance issue for rules on the public product repository.
 

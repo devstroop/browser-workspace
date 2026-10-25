@@ -71,11 +71,23 @@ Out of scope:
 
 ## Evidence
 
-- `SECURITY-AND-LICENSES.md`
-- `REFERENCE-REGISTER.md`
-- `research/references/2026-10-25-initial-audit.md`
-- Native SDK CEF sandbox source finding.
-- Upstream license files and Chromium/CEF notices.
+This issue is self-contained. Internal policy analysis is maintained in a private workspace; the public sources below are the starting point for the inventory.
+
+- Chromium license and third-party notices: https://github.com/chromium/chromium/blob/main/LICENSE
+- CEF license: https://github.com/chromiumembedded/cef/blob/master/LICENSE.txt
+- WebKit per-file licensing: https://github.com/WebKit/WebKit/tree/main/Source/WebCore
+- Servo license: https://github.com/servo/servo/blob/main/LICENSE
+- Brave core license: https://github.com/brave/brave-core/blob/master/LICENSE
+- Lightpanda license: https://github.com/lightpanda-io/browser/blob/main/LICENSE
+- Native SDK CEF host (v0.11.0): https://github.com/vercel-labs/native/blob/v0.11.0/src/platform/macos/cef_host.mm
+- Electron security: https://www.electronjs.org/docs/latest/tutorial/security
+
+## Related issues
+
+- MVP definition: #1
+- Engine/shell spike: #2
+- Product governance: #4
+- Visible prototype: #5
 
 ## Definition of done
 

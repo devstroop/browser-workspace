@@ -65,9 +65,20 @@ Out of scope:
 
 ## Evidence
 
+This issue is self-contained. Internal workspace policy is maintained privately; the public repository files and platform documentation below define the controls.
+
 - Product `README.md`, `CONTRIBUTING.md`, `SECURITY.md`.
 - GitHub API: private vulnerability reporting enabled; branch protection not configured; Actions SHA pinning not required.
-- Workspace `WORKING-MODEL.md` and `SECURITY-AND-LICENSES.md`.
+- GitHub rulesets: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets
+- GitHub security advisories: https://docs.github.com/en/code-security/security-advisories
+- GitHub Actions security hardening: https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions
+
+## Related issues
+
+- MVP definition: #1
+- Engine/shell spike: #2
+- Security/license baseline: #3
+- Visible prototype: #5
 
 ## Definition of done
 

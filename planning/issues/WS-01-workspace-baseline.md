@@ -33,7 +33,7 @@ Out of scope:
 - [ ] Reports state date, scope, evidence, limitations, and linked issues.
 - [ ] `planning/ISSUE-MAP.md` maps each baseline issue to its repository and status.
 - [ ] `node tooling/checks/check-workspace.mjs` passes locally.
-- [ ] The workspace CI workflow passes on `main`.
+- [ ] The workspace CI workflow passes on `main`. Currently blocked before job start by the private-repository Actions billing/spending limit (run `40175789838`); the local checker passes 55/55.
 - [ ] Remaining governance gaps are split into tracked issues rather than hidden in prose.
 
 ## Estimate and confidence

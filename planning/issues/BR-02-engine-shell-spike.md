@@ -88,11 +88,22 @@ A spike report in the workspace (or a public, non-sensitive summary in the produ
 
 ## Evidence
 
-- `REFERENCE-REGISTER.md` and the 2026-10-25 audit in the workspace.
-- Native SDK docs: web engines, platform support, updates.
-- Native SDK source: `src/platform/macos/cef_host.mm` at v0.11.0.
-- CEF documentation and binary distributions.
-- Tauri/Wry, Electron, and platform WebView documentation.
+This issue is self-contained. Internal comparative analysis is maintained in a private workspace; the public sources below support the spike scope.
+
+- Native SDK: https://github.com/vercel-labs/native
+- Native SDK CEF host (v0.11.0): https://github.com/vercel-labs/native/blob/v0.11.0/src/platform/macos/cef_host.mm
+- Native SDK web-engine docs: https://github.com/vercel-labs/native/blob/main/docs/content/docs/web-engines.mdx
+- CEF: https://chromiumembedded.github.io/cef/
+- Tauri: https://v2.tauri.app/
+- Wry: https://github.com/tauri-apps/wry
+- Electron security: https://www.electronjs.org/docs/latest/tutorial/security
+- WKWebView: https://developer.apple.com/documentation/webkit/wkwebview
+
+## Related issues
+
+- MVP definition and site list: #1
+- Security/license baseline: #3
+- Visible prototype: #5
 
 ## Definition of done
 

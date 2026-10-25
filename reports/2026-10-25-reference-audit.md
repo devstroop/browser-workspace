@@ -61,9 +61,9 @@ Run the time-boxed system-WebView vs CEF vs Electron spike in [ADR-0001](../deci
 
 ## Linked issues
 
-- Reference-audit refresh cadence.
-- Engine/shell spike.
-- Security and license baseline.
-- MVP definition.
+- Reference-audit refresh cadence — [WS-03 #3](https://github.com/devstroop/browser-workspace/issues/3)
+- Engine/shell spike — [BR-02 #2](https://github.com/devstroop/browser/issues/2)
+- Security/license baseline — [BR-03 #3](https://github.com/devstroop/browser/issues/3)
+- MVP definition — [BR-01 #1](https://github.com/devstroop/browser/issues/1)
 
 See the [issue map](../planning/ISSUE-MAP.md) for current status and URLs.

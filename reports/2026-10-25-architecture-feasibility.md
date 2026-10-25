@@ -216,4 +216,10 @@ Ranges are planning inputs, not commitments. They exclude legal review, design, 
 
 ## Linked issues
 
-See the [issue map](../planning/ISSUE-MAP.md): MVP definition, engine/shell spike, security/license baseline, product governance, and prototype/test harness.
+- MVP definition — [BR-01 #1](https://github.com/devstroop/browser/issues/1)
+- Engine/shell spike — [BR-02 #2](https://github.com/devstroop/browser/issues/2)
+- Security/license baseline — [BR-03 #3](https://github.com/devstroop/browser/issues/3)
+- Product governance — [BR-04 #4](https://github.com/devstroop/browser/issues/4)
+- Visible prototype and test harness — [BR-05 #5](https://github.com/devstroop/browser/issues/5)
+
+See also the [issue map](../planning/ISSUE-MAP.md).

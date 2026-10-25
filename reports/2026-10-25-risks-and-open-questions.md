@@ -121,4 +121,11 @@ The product repository is public. A public issue that links only to a private wo
 
 ## Linked issues
 
-See the [issue map](../planning/ISSUE-MAP.md). The highest-priority open issues are the engine/shell spike, security/license baseline, MVP definition, product governance, and workspace CI/governance.
+- Engine/shell spike — [BR-02 #2](https://github.com/devstroop/browser/issues/2)
+- Security/license baseline — [BR-03 #3](https://github.com/devstroop/browser/issues/3)
+- MVP definition and acceptance criteria — [BR-01 #1](https://github.com/devstroop/browser/issues/1)
+- Product governance and release readiness — [BR-04 #4](https://github.com/devstroop/browser/issues/4)
+- Workspace CI/governance — [WS-02 #2](https://github.com/devstroop/browser-workspace/issues/2)
+- Reference-audit refresh cadence — [WS-03 #3](https://github.com/devstroop/browser-workspace/issues/3)
+
+See also the [issue map](../planning/ISSUE-MAP.md).

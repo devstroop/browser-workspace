@@ -87,7 +87,7 @@ Minimum questions before selecting an engine/shell:
 
 | Control | Verified state (2026-10-25) |
 |---|---|
-| Product security policy | `SECURITY.md` exists in the product seed |
+| Product and workspace security policy | `SECURITY.md` exists in both repositories |
 | Private vulnerability reporting | Enabled on `devstroop/browser` |
 | Workspace vulnerability reporting | API returned 404 / unavailable at audit time; do not claim a reporting channel |
 | Branch protection | Not configured on product; unavailable for private workspace on current plan |
@@ -97,6 +97,7 @@ Minimum questions before selecting an engine/shell:
 | Dependency update automation | Not configured |
 | Secret scanning / push protection | Not verified as enabled |
 | CI token permissions | Workflows declare `contents: read`; repository default is read-only workflow permissions |
+| CI execution | Product hygiene check passed (run `40175022540`); workspace workflow blocked by private-repository Actions billing/spending limit (run `40175789838`); local checker passes |
 | GitHub Actions policy | All actions allowed; SHA pinning not required. Workflows in this baseline pin action commits manually. |
 | Release signing / notarization | Not implemented |
 | Update integrity | Not implemented |

@@ -77,6 +77,7 @@ The product seed contains README, CONTRIBUTING, SECURITY, issue/PR templates, `.
 
 - Added `CONTRIBUTING.md` and updated the working model, roadmap, first-week checklist, security/license policy, and submodule notes.
 - Added issue-ready drafts and a label vocabulary.
+- Created labels and filed eight baseline issues (workspace #1–#3, product #1–#5); recorded them in the issue map and manifest.
 - Removed the invalid owner/repository placeholder from the workspace issue template config and replaced it with the product security reporting link.
 - Added issue/PR template improvements where needed.
 
@@ -98,6 +99,8 @@ The product seed contains README, CONTRIBUTING, SECURITY, issue/PR templates, `.
 | Product visibility | Public |
 | Product default branch | `main` |
 | Product seed commit | `077c98f5c96c7c4cb51acb2df1492e7e44eec146` |
+| Workspace baseline commit | `4a6de6965f78db3c3d70ba00603e13ee674787e0` pushed to `main` |
+| Issues | 8 filed: workspace #1–#3, product #1–#5 |
 | Submodule path | `browser/` |
 | Submodule pin | `077c98f` |
 | Product license | None granted |
@@ -107,6 +110,8 @@ The product seed contains README, CONTRIBUTING, SECURITY, issue/PR templates, `.
 | Workspace branch protection/rulesets | Rejected by current private-repo plan (upgrade required) |
 | GitHub Actions SHA pinning policy | Not required; workflows pin action commits manually |
 | Default workflow token permissions | Read-only; workflows declare `contents: read` |
+| Product CI | Repository hygiene workflow succeeded (run `40175022540`) |
+| Workspace CI | Workflow exists; GitHub run `40175789838` failed before starting because of private-repository Actions billing/spending limit |
 
 ## What is not done
 
@@ -118,7 +123,7 @@ The product seed contains README, CONTRIBUTING, SECURITY, issue/PR templates, `.
 - No branch protection, required reviews, CODEOWNERS, or signed-commit requirement.
 - No release, signing, notarization, or update mechanism.
 - No product threat model or security test suite.
-- No verification that GitHub Actions runs pass; run status must be checked after push.
+- No successful workspace GitHub Actions run; the private-repository billing/spending limit blocks job startup. The local checker passes.
 - No milestone or project-board configuration.
 
 ## Validation
@@ -126,13 +131,20 @@ The product seed contains README, CONTRIBUTING, SECURITY, issue/PR templates, `.
 Local validation commands:
 
 ```bash
-node tooling/checks/check-workspace.mjs
+node tooling/checks/check-workspace.mjs --require-submodule
 git submodule status
 git ls-tree HEAD browser
 jq empty research/references/upstream-metadata-2026-10-25.json
 ```
 
-Results are recorded after the final check run. A passing workspace check does not validate product behavior, upstream claims, or security properties.
+Results on 2026-10-25:
+
+- Workspace checker: **55 passed, 0 warnings, 0 errors**.
+- Submodule: clean, HEAD `077c98f5c96c7c4cb51acb2df1492e7e44eec146`, matching the gitlink.
+- Product repository hygiene workflow: **success** (run `40175022540`).
+- Workspace workflow: **blocked before job start** by the private-repository Actions billing/spending limit (run `40175789838`). This is not a workflow-code failure, but it is not a passing CI result.
+
+A passing workspace check does not validate product behavior, upstream claims, or security properties.
 
 ## Limitations
 
@@ -145,13 +157,13 @@ Results are recorded after the final check run. A passing workspace check does n
 
 ## Linked issues
 
-See the [issue map](../planning/ISSUE-MAP.md). Primary baseline issues:
+See the [issue map](../planning/ISSUE-MAP.md). The eight baseline issues were filed on 2026-10-25:
 
-- Workspace baseline and traceability.
-- Workspace CI/governance enforcement.
-- Reference-audit refresh cadence.
-- Product repository bootstrap and delivery governance.
-- MVP definition.
-- Engine/shell spike.
-- Security/license baseline.
-- Visible prototype and test harness.
+- Workspace baseline and traceability — [WS-01 / #1](https://github.com/devstroop/browser-workspace/issues/1)
+- Workspace CI/governance enforcement — [WS-02 / #2](https://github.com/devstroop/browser-workspace/issues/2)
+- Reference-audit refresh cadence — [WS-03 / #3](https://github.com/devstroop/browser-workspace/issues/3)
+- Product repository bootstrap and delivery governance — [BR-04 / #4](https://github.com/devstroop/browser/issues/4)
+- MVP definition — [BR-01 / #1](https://github.com/devstroop/browser/issues/1)
+- Engine/shell spike — [BR-02 / #2](https://github.com/devstroop/browser/issues/2)
+- Security/license baseline — [BR-03 / #3](https://github.com/devstroop/browser/issues/3)
+- Visible prototype and test harness — [BR-05 / #5](https://github.com/devstroop/browser/issues/5)

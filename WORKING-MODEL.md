@@ -128,11 +128,14 @@ The product repository is public, so a GitHub-hosted workflow can fetch the subm
 | Workspace repository exists | Verified |
 | Submodule declared and pinned | Verified locally; CI verification depends on the workflow run |
 | Product governance files | Present in seed commit |
-| Product CI | Repository hygiene check only |
-| Workspace CI | Check workflow committed; see run status in Actions |
-| Branch protection / rulesets | Not configured for the product repository; unavailable for the private workspace on the current plan |
+| Product CI | Repository hygiene check passed (run `40175022540`); no product build/test CI |
+| Workspace CI | Local checker passes 55/55; GitHub-hosted run blocked by private-repository Actions billing/spending limit (run `40175789838`) |
+| Issues | 8 baseline issues filed (workspace #1–#3, product #1–#5) |
+| Branch protection / rulesets | Not configured for the product repository (public rulesets available); unavailable for the private workspace on the current plan |
 | Required reviews | Not enforced |
 | CODEOWNERS | Not configured |
 | License decision | Not made |
-| Security policy | Product `SECURITY.md` present; private reporting enabled on the public product repository |
+| Security policy | Product and workspace `SECURITY.md` present; private reporting enabled on the public product repository; no workspace-specific reporting channel verified |
 | Release/signing/update process | Not defined |
+
+Settings evidence and proposed controls: [Repository settings and CI verification](reports/2026-10-25-repository-settings.md).

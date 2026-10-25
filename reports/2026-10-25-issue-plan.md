@@ -1,7 +1,7 @@
 # Issue Plan
 
 - Report date: 2026-10-25
-- Status: Eight issues drafted; filing status tracked in [ISSUE-MAP.md](../planning/ISSUE-MAP.md)
+- Status: Eight issues filed on 2026-10-25; status tracked in [ISSUE-MAP.md](../planning/ISSUE-MAP.md)
 - Scope: Baseline decomposition for workspace, product definition, architecture, security/licensing, governance, and prototype
 - Evidence: [Workspace baseline](2026-10-25-workspace-baseline.md), [feasibility](2026-10-25-architecture-feasibility.md), [risks](2026-10-25-risks-and-open-questions.md)
 - Related issues: See the [issue map](../planning/ISSUE-MAP.md)
@@ -23,16 +23,16 @@ Research and implementation are separated. BR-02 and BR-03 are investigations; B
 
 ## Issue summary
 
-| Key | Repository | Type | Priority | Estimate | Depends on |
-|---|---|---|---|---|---|
-| WS-01 | Workspace | Epic | p1 | 2–4 engineer-days remaining | Reviewer, CI run |
-| WS-02 | Workspace | Task | p0 | 0.5–1 engineer-day | GitHub plan/visibility decision |
-| WS-03 | Workspace | Research | p2 | 1–2 engineer-days | Owner assignment |
-| BR-01 | Product | Epic | p0 | 3–5 engineer-days | Product direction |
-| BR-02 | Product | Research | p0 | 4–6 calendar weeks | BR-01 site list, build/signing, security review |
-| BR-03 | Product | Research | p0 | 5–8 engineer-days + legal | BR-02 artifacts, counsel |
-| BR-04 | Product | Epic | p0 | 3–5 engineer-days | License decision, admin access |
-| BR-05 | Product | Epic | p1 (blocked) | 4–8 engineer-weeks | BR-01, BR-02, BR-03, BR-04 |
+| Key | Repository | Type | Priority | Estimate | Depends on | Issue |
+|---|---|---|---|---|---|---|
+| WS-01 | Workspace | Epic | p1 | 2–4 engineer-days remaining | Reviewer, CI run | [#1](https://github.com/devstroop/browser-workspace/issues/1) |
+| WS-02 | Workspace | Task | p0 | 0.5–1 engineer-day | GitHub plan/visibility decision | [#2](https://github.com/devstroop/browser-workspace/issues/2) |
+| WS-03 | Workspace | Research | p2 | 1–2 engineer-days | Owner assignment | [#3](https://github.com/devstroop/browser-workspace/issues/3) |
+| BR-01 | Product | Epic | p0 | 3–5 engineer-days | Product direction | [#1](https://github.com/devstroop/browser/issues/1) |
+| BR-02 | Product | Research | p0 | 4–6 calendar weeks | BR-01 site list, build/signing, security review | [#2](https://github.com/devstroop/browser/issues/2) |
+| BR-03 | Product | Research | p0 | 5–8 engineer-days + legal | BR-02 artifacts, counsel | [#3](https://github.com/devstroop/browser/issues/3) |
+| BR-04 | Product | Epic | p0 | 3–5 engineer-days | License decision, admin access | [#4](https://github.com/devstroop/browser/issues/4) |
+| BR-05 | Product | Epic | p1 (blocked) | 4–8 engineer-weeks | BR-01, BR-02, BR-03, BR-04 | [#5](https://github.com/devstroop/browser/issues/5) |
 
 ## Why these eight
 
@@ -45,7 +45,7 @@ Research and implementation are separated. BR-02 and BR-03 are investigations; B
 - **BR-04** makes contribution, release, and vulnerability handling real.
 - **BR-05** is the first implementation epic, deliberately blocked until the decisions exist.
 
-## Not filed yet
+## Deferred child issues
 
 The following are intentionally deferred until a decision or evidence exists:
 
@@ -79,20 +79,21 @@ An issue is ready when it has:
 
 ## Filing status
 
-Filing is tracked in [ISSUE-MAP.md](../planning/ISSUE-MAP.md). The issue bodies are in [`planning/issues/`](../planning/issues/). Labels are documented in [`planning/LABELS.md`](../planning/LABELS.md).
+All eight baseline issues were filed on 2026-10-25. Filing is tracked in [ISSUE-MAP.md](../planning/ISSUE-MAP.md). The issue bodies remain in [`planning/issues/`](../planning/issues/). Labels are documented in [`planning/LABELS.md`](../planning/LABELS.md).
 
-If an issue cannot be filed (permissions, repository visibility, or missing decision), the draft remains the source of truth and the blocker is recorded in the map. Do not claim an issue exists without a URL.
+If an issue is closed, split, or superseded, update the map and manifest. Do not claim an issue exists without a URL.
 
 ## Linked issues
 
-See the [issue map](../planning/ISSUE-MAP.md) for the eight baseline issues, their repositories, labels, and current filing status.
+- Workspace: [WS-01 #1](https://github.com/devstroop/browser-workspace/issues/1), [WS-02 #2](https://github.com/devstroop/browser-workspace/issues/2), [WS-03 #3](https://github.com/devstroop/browser-workspace/issues/3)
+- Product: [BR-01 #1](https://github.com/devstroop/browser/issues/1), [BR-02 #2](https://github.com/devstroop/browser/issues/2), [BR-03 #3](https://github.com/devstroop/browser/issues/3), [BR-04 #4](https://github.com/devstroop/browser/issues/4), [BR-05 #5](https://github.com/devstroop/browser/issues/5)
 
 ## Limitations
 
 - Estimates are planning ranges, not measured productivity or commitments.
 - The decomposition assumes a macOS-first MVP; a different platform decision changes the spike and prototype scope.
 - No issue has been assigned or scheduled.
-- Filing status depends on repository permissions and is tracked separately in the issue map.
+- All eight issues were filed, but none has been assigned, scheduled, or accepted for implementation.
 - The issue set does not cover every future subsystem; deferred work is listed above.
 - Public product issues cannot rely on private workspace links as their only evidence.
 
