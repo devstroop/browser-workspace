@@ -97,7 +97,7 @@ Minimum questions before selecting an engine/shell:
 | Dependency update automation | Not configured |
 | Secret scanning / push protection | Not verified as enabled |
 | CI token permissions | Workflows declare `contents: read`; repository default is read-only workflow permissions |
-| CI execution | Product hygiene check passed (run `40175022540`); workspace workflow blocked by private-repository Actions billing/spending limit (run `40175789838`); local checker passes |
+| CI execution | Product hygiene check passed (run `40175022540`); workspace check passed (run `40176621704`); the first workspace attempt failed before job start due to private-repository Actions billing |
 | GitHub Actions policy | All actions allowed; SHA pinning not required. Workflows in this baseline pin action commits manually. |
 | Release signing / notarization | Not implemented |
 | Update integrity | Not implemented |

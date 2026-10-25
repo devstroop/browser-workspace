@@ -15,7 +15,7 @@
 - [ ] Configure branch protection in the workspace repository — current private-repository plan returns "Upgrade to GitHub Pro" for branch protection/rulesets.
 - [x] Add minimal workspace CI — `.github/workflows/workspace-check.yml`.
 - [x] Add minimal product repository hygiene CI — `.github/workflows/repository-check.yml` in the product seed.
-- [ ] Verify workspace CI on GitHub — blocked by the private-repository Actions billing/spending limit (run `40175789838`). Local checker passes 55/55.
+- [x] Verify workspace CI on GitHub — run `40176621704` passed 55/55. An earlier attempt (`40175789838`) failed before job start due to the private-repository Actions billing/spending limit.
 - [x] Verify product repository hygiene CI — run `40175022540` succeeded.
 - [ ] Add a submodule credential strategy if the product repository becomes private — currently public, so anonymous fetch is possible.
 

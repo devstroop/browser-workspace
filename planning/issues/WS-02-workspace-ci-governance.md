@@ -30,14 +30,14 @@ Out of scope:
 
 ## Acceptance criteria
 
-- [ ] The `workspace-check` workflow has a successful run on `main`, linked from this issue. The first run (`40175789838`) failed before job start because of the private-repository Actions billing/spending limit; local checks pass.
-- [ ] The workflow validates required files, relative links, JSON, placeholder/secret patterns, and the submodule declaration/pin.
-- [ ] A required status check is configured for `main`, or the platform blocker and accepted alternative are documented.
-- [ ] Actions are pinned to full commit SHAs; the policy is recorded.
-- [ ] Workflow token permissions are minimal (`contents: read`).
+- [x] The `workspace-check` workflow has a successful run on `main` (run `40176621704`, 55/55). The first attempt (`40175789838`) failed before job start because of a private-repository Actions billing condition.
+- [x] The workflow validates required files, relative links, JSON, placeholder/secret patterns, and the submodule declaration/pin.
+- [x] A required status check is configured for `main`, or the platform blocker and accepted alternative are documented. The private-repo plan rejects rulesets; the limitation is recorded in [the settings report](https://github.com/devstroop/browser-workspace/blob/main/reports/2026-10-25-repository-settings.md).
+- [x] Actions are pinned to full commit SHAs; the policy is recorded.
+- [x] Workflow token permissions are minimal (`contents: read`).
 - [ ] Secret scanning/push protection status is verified and recorded; gaps have issues.
-- [ ] CODEOWNERS or an ownership map is added, or the reason it is deferred is recorded.
-- [ ] No workflow claims to validate product behavior or security.
+- [x] CODEOWNERS or an ownership map is added, or the reason it is deferred is recorded. Ownership is not assigned; deferral is recorded in the settings report.
+- [x] No workflow claims to validate product behavior or security.
 
 ## Estimate and confidence
 
@@ -48,7 +48,7 @@ Out of scope:
 ## Dependencies and blockers
 
 - GitHub plan or visibility decision for private-repo branch protection.
-- Private-repository Actions billing/spending limit; the workflow cannot start until resolved.
+- Resolved: the first workspace workflow run was blocked before job start by a private-repository Actions billing condition; the retry passed (`40176621704`).
 - Organization admin access.
 - Product governance issue for rules on the public product repository.
 

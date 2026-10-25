@@ -111,7 +111,7 @@ The product seed contains README, CONTRIBUTING, SECURITY, issue/PR templates, `.
 | GitHub Actions SHA pinning policy | Not required; workflows pin action commits manually |
 | Default workflow token permissions | Read-only; workflows declare `contents: read` |
 | Product CI | Repository hygiene workflow succeeded (run `40175022540`) |
-| Workspace CI | Workflow exists; GitHub run `40175789838` failed before starting because of private-repository Actions billing/spending limit |
+| Workspace CI | GitHub workflow passed 55/55 (run `40176621704`); first attempt `40175789838` failed before job start due to private-repository Actions billing |
 
 ## What is not done
 
@@ -123,7 +123,7 @@ The product seed contains README, CONTRIBUTING, SECURITY, issue/PR templates, `.
 - No branch protection, required reviews, CODEOWNERS, or signed-commit requirement.
 - No release, signing, notarization, or update mechanism.
 - No product threat model or security test suite.
-- No successful workspace GitHub Actions run; the private-repository billing/spending limit blocks job startup. The local checker passes.
+- No workspace required-status-check enforcement; the CI workflow passes, but branch protection/rulesets remain unavailable on the current private-repo plan.
 - No milestone or project-board configuration.
 
 ## Validation
@@ -142,7 +142,7 @@ Results on 2026-10-25:
 - Workspace checker: **55 passed, 0 warnings, 0 errors**.
 - Submodule: clean, HEAD `077c98f5c96c7c4cb51acb2df1492e7e44eec146`, matching the gitlink.
 - Product repository hygiene workflow: **success** (run `40175022540`).
-- Workspace workflow: **blocked before job start** by the private-repository Actions billing/spending limit (run `40175789838`). This is not a workflow-code failure, but it is not a passing CI result.
+- Workspace workflow: **success, 55/55 checks** (run `40176621704`). The first attempt (`40175789838`) failed before job start due to the private-repository Actions billing/spending limit; it was retried after the billing condition cleared.
 
 A passing workspace check does not validate product behavior, upstream claims, or security properties.
 

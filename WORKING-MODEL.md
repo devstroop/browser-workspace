@@ -129,7 +129,7 @@ The product repository is public, so a GitHub-hosted workflow can fetch the subm
 | Submodule declared and pinned | Verified locally; CI verification depends on the workflow run |
 | Product governance files | Present in seed commit |
 | Product CI | Repository hygiene check passed (run `40175022540`); no product build/test CI |
-| Workspace CI | Local checker passes 55/55; GitHub-hosted run blocked by private-repository Actions billing/spending limit (run `40175789838`) |
+| Workspace CI | GitHub-hosted workflow passed 55/55 (run `40176621704`); first attempt (`40175789838`) failed before job start due to private-repository Actions billing |
 | Issues | 8 baseline issues filed (workspace #1–#3, product #1–#5) |
 | Branch protection / rulesets | Not configured for the product repository (public rulesets available); unavailable for the private workspace on the current plan |
 | Required reviews | Not enforced |

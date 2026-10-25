@@ -49,7 +49,7 @@ BR-04 (product governance) ──┘
 | No product license decision | BR-04; external contributions and distribution | Open |
 | No engine/shell decision | BR-02, BR-05 | Open; spike not run |
 | No MVP site/test list | BR-01, BR-02, BR-05 | Open |
-| Workspace private-repo Actions billing/spending limit | WS-02, WS-01 CI verification | Verified platform failure; local checker passes |
+| Workspace required status check not configured | WS-02, WS-01 CI enforcement | CI passes; branch protection/rulesets unavailable on current private-repo plan |
 | Product branch protection not configured | BR-04 | Open |
 | No legal/security review | BR-03, BR-04 | Open |
 | NATIVE SDK CEF sandbox disabled | BR-02, BR-03 | Verified source finding; remediation unknown |

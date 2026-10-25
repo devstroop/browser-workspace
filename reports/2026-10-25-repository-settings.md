@@ -53,13 +53,14 @@ The `devstroop/browser-workspace` repository is private. On the current plan, Gi
 |---|---|---|---|
 | `40175022540` | `devstroop/browser` | **Success** | `repository-check` hygiene workflow passed in 8 seconds |
 | `40175789838` | `devstroop/browser-workspace` | **Failure before job start** | "The job was not started because recent account payments have failed or your spending limit needs to be increased" |
+| `40176621704` | `devstroop/browser-workspace` | **Success** | `workspace-check` passed 55/55 on retry |
 
 Local workspace validation on 2026-10-25:
 
 - `node tooling/checks/check-workspace.mjs --require-submodule`: **55 passed, 0 warnings, 0 errors**.
 - Submodule HEAD matches the gitlink at `077c98f5c96c7c4cb51acb2df1492e7e44eec146`.
 
-The workspace workflow cannot be claimed as passing. Its failure is a billing/spending-limit blocker, not evidence that the checker fails.
+The workspace workflow now passes on GitHub. The initial failure was a billing/spending-limit condition, not a checker failure; the retry completed successfully.
 
 ## Proposed controls (not applied)
 
@@ -109,7 +110,7 @@ Do not describe these as active until the settings are applied and verified thro
 - Settings were read through the GitHub API at one point in time; they can change.
 - The API does not expose every organization-level policy or UI-only setting.
 - Secret scanning, push protection, Dependabot, and signed-commit status were not verified.
-- CI execution for the workspace is blocked by billing, so the workflow has not been validated on a GitHub-hosted runner.
+- The first workspace CI attempt was blocked by a billing/spending-limit condition; the retry passed. Billing state can change again.
 - Proposed controls are recommendations, not commitments or legal/security guarantees.
 
 ## Next actions
@@ -118,4 +119,4 @@ Do not describe these as active until the settings are applied and verified thro
 2. Apply and verify the product `main` ruleset, including the `repository-check` requirement.
 3. Add CODEOWNERS and a release/security owner.
 4. Verify secret scanning, push protection, and Dependabot availability.
-5. Re-run the workspace workflow after the billing issue is resolved; record the run URL.
+5. Configure required status checks/rulesets where the plan permits; record the workspace plan blocker if it remains.

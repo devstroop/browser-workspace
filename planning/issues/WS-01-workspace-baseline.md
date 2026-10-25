@@ -26,15 +26,17 @@ Out of scope:
 
 ## Acceptance criteria
 
-- [ ] Root docs distinguish verified state from proposed controls.
-- [ ] `REFERENCE-REGISTER.md` lists exact revisions, releases, licenses, dispositions, and limitations for all 16 references.
-- [ ] `research/references/2026-10-25-initial-audit.md` records scope, method, evidence, and per-project findings.
-- [ ] ADR-0001 is explicitly **Proposed**, not Accepted.
-- [ ] Reports state date, scope, evidence, limitations, and linked issues.
-- [ ] `planning/ISSUE-MAP.md` maps each baseline issue to its repository and status.
-- [ ] `node tooling/checks/check-workspace.mjs` passes locally.
-- [ ] The workspace CI workflow passes on `main`. Currently blocked before job start by the private-repository Actions billing/spending limit (run `40175789838`); the local checker passes 55/55.
-- [ ] Remaining governance gaps are split into tracked issues rather than hidden in prose.
+- [x] Root docs distinguish verified state from proposed controls.
+- [x] `REFERENCE-REGISTER.md` lists exact revisions, releases, licenses, dispositions, and limitations for all 16 references.
+- [x] `research/references/2026-10-25-initial-audit.md` records scope, method, evidence, and per-project findings.
+- [x] ADR-0001 is explicitly **Proposed**, not Accepted.
+- [x] Reports state date, scope, evidence, limitations, and linked issues.
+- [x] `planning/ISSUE-MAP.md` maps each baseline issue to its repository and status.
+- [x] `node tooling/checks/check-workspace.mjs` passes locally.
+- [x] The workspace CI workflow passes on `main` (run `40176621704`, 55/55). The first attempt (`40175789838`) was blocked before job start by a private-repository Actions billing condition.
+- [x] Remaining governance gaps are split into tracked issues rather than hidden in prose.
+
+Review status: the criteria are met in the current tree, but an independent reviewer has not confirmed the verified/proposed distinction. The definition of done is not met and the issue remains open.
 
 ## Estimate and confidence
 

@@ -19,7 +19,7 @@ The product repository is a Git submodule at [`browser/`](browser/) and is pinne
 | Submodule | `browser/` pinned to `077c98f`; lifecycle remains independent |
 | Architecture | No engine or shell selected; [ADR-0001](decisions/ADR-0001-browser-engine-and-shell-strategy.md) is **Proposed** |
 | Reference audit | 16 projects pinned and audited at documentation/source-manifest level; no upstream build or runtime test |
-| Workspace CI | Workflow committed; GitHub-hosted run blocked by the private-repository Actions billing/spending limit (run `40175789838`). Local checker passes. |
+| Workspace CI | GitHub-hosted workflow passed (run `40176621704`, 55/55 checks); an earlier attempt (`40175789838`) failed before job start due to the private-repository Actions billing/spending limit |
 | Product CI | Repository hygiene workflow succeeded (run `40175022540`) |
 | Issues | 8 filed: [workspace #1–#3](https://github.com/devstroop/browser-workspace/issues), [product #1–#5](https://github.com/devstroop/browser/issues); see [planning/ISSUE-MAP.md](planning/ISSUE-MAP.md) |
 | Branch protection | Not configured. Workspace branch protection/rulesets are rejected by the current private-repo plan; product rulesets are available but not configured. |
