@@ -111,6 +111,7 @@ Do not describe these as active until the settings are applied and verified thro
 - The API does not expose every organization-level policy or UI-only setting.
 - Secret scanning, push protection, Dependabot, and signed-commit status were not verified.
 - The first workspace CI attempt was blocked by a billing/spending-limit condition; the retry passed. Billing state can change again.
+- The workspace run emits a Node.js 20 deprecation annotation because `actions/checkout@v4.2.2` and `actions/setup-node@v4.1.0` target Node 20 and are forced onto Node 24. The workflow passes; bumping to current pinned action majors is a follow-up, not a blocker.
 - Proposed controls are recommendations, not commitments or legal/security guarantees.
 
 ## Next actions
@@ -120,3 +121,4 @@ Do not describe these as active until the settings are applied and verified thro
 3. Add CODEOWNERS and a release/security owner.
 4. Verify secret scanning, push protection, and Dependabot availability.
 5. Configure required status checks/rulesets where the plan permits; record the workspace plan blocker if it remains.
+6. Bump `actions/checkout` and `actions/setup-node` to current pinned majors to clear the Node.js 20 deprecation annotation.

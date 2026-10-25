@@ -142,7 +142,7 @@ Results on 2026-10-25:
 - Workspace checker: **55 passed, 0 warnings, 0 errors**.
 - Submodule: clean, HEAD `077c98f5c96c7c4cb51acb2df1492e7e44eec146`, matching the gitlink.
 - Product repository hygiene workflow: **success** (run `40175022540`).
-- Workspace workflow: **success, 55/55 checks** (run `40176621704`). The first attempt (`40175789838`) failed before job start due to the private-repository Actions billing/spending limit; it was retried after the billing condition cleared.
+- Workspace workflow: **success, 55/55 checks** (run `40176621704`). The first attempt (`40175789838`) failed before job start due to the private-repository Actions billing/spending limit; it was retried after the billing condition cleared. The workflow emits a Node.js 20 deprecation annotation for the pinned action versions; it does not fail the job.
 
 A passing workspace check does not validate product behavior, upstream claims, or security properties.
 
