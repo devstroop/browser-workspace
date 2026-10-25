@@ -1,0 +1,48 @@
+name: Bug / gap
+description: Report a reproducible defect or observed capability gap.
+title: "[BUG] "
+labels: ["type: bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and versions
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Evidence status
+      options:
+        - Reproduced
+        - Observed once
+        - Inferred
+        - Unverified automated finding
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: User impact, severity, and evidence

@@ -1,0 +1,45 @@
+name: Initiative / Epic
+description: Track a capability, milestone, subsystem, or broad objective.
+title: "[EPIC] "
+labels: ["type: epic"]
+body:
+  - type: markdown
+    attributes:
+      value: "An epic may begin with incomplete decomposition. Track uncertainty and refine its child issues as evidence emerges."
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What observable outcome should exist when this issue is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and motivation
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Known scope
+      description: Include known in-scope and out-of-scope work. Mark unknowns explicitly.
+  - type: textarea
+    id: decomposition
+    attributes:
+      label: Known child issues / workstreams
+      description: Link existing issues. Add more as scope becomes clearer.
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and blockers
+  - type: textarea
+    id: estimate
+    attributes:
+      label: Estimate and confidence
+      description: Provide a range, assumptions, confidence, and discovery work still needed.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Completion criteria
+      description: State measurable exit criteria; avoid requiring every child to be known at creation.

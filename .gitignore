@@ -1,0 +1,36 @@
+# Local environment
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+Thumbs.db
+
+# Editor and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary experiment output
+.tmp/
+temp/
+tmp/
+.cache/
+
+# Build output (adapt to the tools actually used)
+build/
+dist/
+out/
+target/
+
+# Local logs and generated artifacts
+*.log
+reports/local/
+benchmarks/results-local/
+
+# Credentials and keys
+*.pem
+*.key
+*.p12
+*.pfx

@@ -1,0 +1,44 @@
+name: Research / investigation
+description: Answer a technical question or reduce an important uncertainty.
+title: "[RESEARCH] "
+labels: ["type: research"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: What must we learn?
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision this research informs
+    validations:
+      required: true
+  - type: textarea
+    id: hypotheses
+    attributes:
+      label: Hypotheses and assumptions
+  - type: textarea
+    id: method
+    attributes:
+      label: Proposed method and sources
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected deliverable
+      description: Report, experiment, comparison, ADR proposal, or recommendation.
+    validations:
+      required: true
+  - type: textarea
+    id: timebox
+    attributes:
+      label: Timebox and estimate
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Completion criteria
+      description: Define what evidence is enough to close the investigation.
+    validations:
+      required: true

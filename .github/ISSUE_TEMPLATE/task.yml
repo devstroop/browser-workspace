@@ -1,0 +1,44 @@
+name: Implementation task
+description: A bounded product or workspace implementation task.
+title: ""
+labels: ["type: task"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What specific result should this task deliver?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and related issues
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and non-goals
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Use observable, testable outcomes.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and risks
+  - type: textarea
+    id: estimate
+    attributes:
+      label: Estimate and confidence
+      description: Estimate range, assumptions, and unknowns.
